@@ -94,6 +94,7 @@ button {
     font-size: 50px;
     margin-bottom: 10px;
     margin-top: -10px;
+    color:#000;
 }
 .boxx{
     background-color: purple;
@@ -115,4 +116,6 @@ button {
 
 h4{
     text-align: justify;
+    font-weight: 100;
+    font-size: medium;
 }
