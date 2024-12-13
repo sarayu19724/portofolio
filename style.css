@@ -79,7 +79,7 @@ button {
 .section2 .profile_photo{
     width:100px;
     height:100px;
-    margin-top:70px;
+    margin-top:68px;
     border-radius: 100px;
     margin-left: 500px;
     place-items: center;
@@ -92,18 +92,27 @@ button {
 }
 .about_me h1{
     font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 .boxx{
     background-color: purple;
     border-radius:30px;
 }
-.animated-name { 
-    font-size: 2rem;
-     animation: fadeInOut 5s ease-in-out; 
+.animated-text { 
+    display: inline-block; 
+    font-size: 2rem; 
+    animation: fadeIn 5s ease-in-out; 
 } 
-@keyframes fadeInOut { 
-    0%, 100% { opacity: 0; transform: translateY(-20px);
-    } 
-     50% { opacity: 1; transform: translateY(0); 
-    } 
+.animated-text span { 
+    display: inline-block; 
+    opacity: 0; 
+    animation: fadeIn 5s ease-in-out forwards; 
+} 
+@keyframes fadeIn { 
+    0% { opacity: 0; transform: translateY(-20px); }
+     100% { opacity: 1; transform: translateY(0); } }
+
+h4{
+    text-align: justify;
 }
