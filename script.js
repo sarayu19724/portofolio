@@ -13,10 +13,10 @@ const countdown = () => {
     const minutes = Math.floor((gap % hour) / minute);
     const seconds = Math.floor((gap % minute) / second);
 
-    document.getElementById('days').innerText = days;
-    document.getElementById('hours').innerText = hours;
-    document.getElementById('minutes').innerText = minutes;
-    document.getElementById('seconds').innerText = seconds;
+    document.getElementById('days').innerText = days.toString().padStart(2, '0');
+    document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
 };
 
 
