@@ -102,6 +102,7 @@ button {
 .boxx{
     background-color: purple;
     border-radius:30px;
+    border: 1px solid #000;
 }
 .animated-text { 
     display: inline-block; 

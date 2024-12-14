@@ -34,7 +34,7 @@ document.getElementById('newYearButton').addEventListener('click', () => {
      });
 
 document.getElementById('newYearButton').addEventListener('click', () => {
- confetti();
+        confetti();
 });
 document.getElementById('newYearButton').addEventListener('click', () => {
     const song = document.getElementById('backgroundSong');
