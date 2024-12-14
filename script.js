@@ -17,43 +17,52 @@ const countdown = () => {
     document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
     document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
     document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
-
+    
     if (gap <= 0) {
-        clearInterval(countdownInterval); 
-        document.getElementById('newYearButton').click(); 
+         clearInterval(countdownInterval); 
+         document.getElementById('newYearButton').click(); 
 };
 };
 
 
 setInterval(countdown, 1000); 
 
-document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message').innerText = 'Happy New Year! '; } )
-document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message1').innerText = '2025 '; } )
+document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message').innerText = 'Happy New Year!'; } )
+document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message1').innerText = '2025'; } )
+document.getElementById('newYearButton').addEventListener('click', () => {
+    const box = document.getElementById('box'); 
+    const images = [ 'url("./icon/OIP.jpg")' ]; 
+    
+    box.style.backgroundImage = images;
+    });
+    document.getElementById('newYearButton').addEventListener('click', () => { 
+        const section2 = document.getElementById('section2'); 
+        
+        section2.style.color = 'white';
+     }); 
+       
+
 
 
 document.getElementById('newYearButton').addEventListener('click', () => {
-     const section1 = document.getElementById('section1'); 
-     const images = [ 'url("./icon/OIP.jpg")' ]; 
-     
-     section1.style.backgroundImage = images;
-     });
-document.getElementById('newYearButton').addEventListener('click', () => {
-        const button = document.getElementById('newYearButton');
-    
-        if (button.textContent === 'Preview') {
-            button.textContent = 'Confetti Launched';
-            confetti({
-                particleCount: 100,
-                spread: 70,
-                origin: { y: 0.6 }
-            });
-    
-            setTimeout(() => {
-                button.textContent = 'Preview';
-            }, 10000); 
-    }});
-    
-    
+    const button = document.getElementById('newYearButton');
+
+    if (button.textContent === 'Preview') {
+        button.textContent = 'Confetti Launched';
+
+        // Launch confetti once
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+
+        setTimeout(() => {
+            button.textContent = 'Preview';
+        }, 10000); // Change button text back after 10 seconds
+    }
+});
+
 document.getElementById('newYearButton').addEventListener('click', () => {
     const song = document.getElementById('backgroundSong');
     const button = document.getElementById('newYearButton');
@@ -64,9 +73,14 @@ document.getElementById('newYearButton').addEventListener('click', () => {
         setTimeout(() => {
             song.pause();
             button.textContent = 'Play Song';
-        }, 10000); 
+        }, 10000); // Stop the song after 10 seconds
     } else {
         song.pause();
         button.textContent = 'Play Song';
     }
 });
+
+
+
+    
+    
