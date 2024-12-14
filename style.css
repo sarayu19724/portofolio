@@ -10,7 +10,10 @@
     border:1px solid grey ;
     background:#590461;
     border-radius:100px;
+    background-image: url("https://png.pngtree.com/back_origin_pic/04/36/73/7edf4a03879af9cf86bd28e35307d18e.jpg");
 }
+
+
 
 .countdown-container { 
     text-align: center;
@@ -76,7 +79,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-
 .section2 .profile_photo{
     width:100px;
     height:100px;
@@ -117,4 +119,9 @@ button {
 
 h4{
     text-align: justify;
+}
+#message1{
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bolder;
 }

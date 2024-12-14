@@ -22,8 +22,8 @@ const countdown = () => {
 
 setInterval(countdown, 1000); 
 
-document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message').innerText = 'Happy New Year!'; } )
-
+document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message').innerText = 'Happy New Year! '; } )
+document.getElementById('newYearButton').addEventListener('click', () => {document.getElementById('message1').innerText = '2025 '; } )
 
 
 document.getElementById('newYearButton').addEventListener('click', () => {
