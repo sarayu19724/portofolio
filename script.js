@@ -37,7 +37,8 @@ document.getElementById('newYearButton').addEventListener('click', () => {
     });
     document.getElementById('newYearButton').addEventListener('click', () => { 
         const section2 = document.getElementById('section2'); 
-        
+        section2.style.background= ' rgba(0, 0, 0, 0.6)';
+
         section2.style.color = 'white';
      }); 
        

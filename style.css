@@ -5,6 +5,7 @@
     height:720px;
     display:flex;
     background-color: antiquewhite;
+    overflow: hidden;
 }
 
 
@@ -77,6 +78,9 @@ button {
     margin-top:00px;
     align-items: center;
     justify-content: center;
+    width:1000px;
+    height:800px;
+
 }
 
 .section2 .profile_photo{
