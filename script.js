@@ -32,10 +32,23 @@ document.getElementById('newYearButton').addEventListener('click', () => {
      
      section1.style.backgroundImage = images;
      });
-
 document.getElementById('newYearButton').addEventListener('click', () => {
-        confetti();
-});
+        const button = document.getElementById('newYearButton');
+    
+        if (button.textContent === 'Preview') {
+            button.textContent = 'Confetti Launched';
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+    
+            setTimeout(() => {
+                button.textContent = 'Preview';
+            }, 10000); 
+    }});
+    
+    
 document.getElementById('newYearButton').addEventListener('click', () => {
     const song = document.getElementById('backgroundSong');
     const button = document.getElementById('newYearButton');
