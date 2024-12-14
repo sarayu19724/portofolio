@@ -17,6 +17,11 @@ const countdown = () => {
     document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
     document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
     document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+
+    if (gap <= 0) {
+        clearInterval(countdownInterval); 
+        document.getElementById('newYearButton').click(); 
+};
 };
 
 
@@ -59,7 +64,7 @@ document.getElementById('newYearButton').addEventListener('click', () => {
         setTimeout(() => {
             song.pause();
             button.textContent = 'Play Song';
-        }, 10000); // Stop the song after 10 seconds
+        }, 10000); 
     } else {
         song.pause();
         button.textContent = 'Play Song';
