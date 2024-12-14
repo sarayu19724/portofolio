@@ -4,32 +4,25 @@
     width:100%;
     height:720px;
     display:flex;
+    background-color: antiquewhite;
 }
-.box .section1{
-    flex:1;
-    border:1px solid grey ;
-    background:#590461;
-    border-radius:100px;
-    background-image: url("https://png.pngtree.com/back_origin_pic/04/36/73/7edf4a03879af9cf86bd28e35307d18e.jpg");
-}
-
 
 
 .countdown-container { 
     text-align: center;
     margin-top:100px;
-    color:white;
-    
-    border-radius: 50px;
+    background:#590461;
+    border-radius: 20px;
     margin-left:10px;
     margin-right:10px;
-
+    color:white;
+    width:500px;
 } 
 #countdown { 
     display: flex; 
     justify-content: center;
     gap: 20px;
-    color:#fff;
+    color:white;
     
 }
 .time-section { 
@@ -44,7 +37,9 @@
 }
 .countdown h1{
    place-items: center;
-
+   font-weight: 300;
+   font-size: medium;
+   margin-left:5px;
 }
 button { 
      margin-top: 10px;
@@ -53,13 +48,19 @@ button {
      cursor: pointer;   
 } 
 
-
+#message1{
+    color:aliceblue;
+    margin-left:220px;
+    font-size: 40px;
+    margin-top:20px;
+}
 #message { 
     margin-top:100px; 
     font-size: 40px;
     color:aliceblue;
     animation: fadeInOut 5s ease-in-out ;
     font-weight: 1000;
+    margin-left:100px;
 }
 @keyframes fadeInOut { 
     0%, 100% {
@@ -70,15 +71,14 @@ button {
          } 
 }
 .box .section2{
-    flex:2;
-    border:1px solid #000;
-    background:antiquewhite;
+    
     border-radius:100px;
     margin-left: 10px;
     margin-top:00px;
     align-items: center;
     justify-content: center;
 }
+
 .section2 .profile_photo{
     width:100px;
     height:100px;
@@ -99,11 +99,6 @@ button {
     margin-top: -10px;
     font-weight: 2000;
 }
-.boxx{
-    background-color: purple;
-    border-radius:30px;
-    border: 1px solid #000;
-}
 .animated-text { 
     display: inline-block; 
     font-size: 2rem; 
@@ -120,9 +115,4 @@ button {
 
 h4{
     text-align: justify;
-}
-#message1{
-    font-size: 40px;
-    margin-top: 10px;
-    font-weight: bolder;
 }
