@@ -8,11 +8,12 @@ Welcome to the New Year Countdown and Portfolio project! This project combines a
 - **Responsive Design**: The project is designed to be responsive and looks great on both desktop and mobile devices.
 - **Portfolio Section**: A section to display skills.
 - **confetti Animation**: A celebratory confetti animation when the countdown reaches zero.
+- **audio**: A celebration audio when the countdown reaches zero.
 
 ## Technologies Used
 - **HTML**: For the structure of the webpage.
 - **CSS**: For styling and layout.
-- **JavaScript**: For the countdown timer and confetti animation.
+- **JavaScript**: For the countdown timer ,confetti animation and audio.
 - 
 
 ## Installation
